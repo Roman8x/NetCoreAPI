@@ -35,7 +35,7 @@ namespace WebApi
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
             // добавляем контекст DP_MainContext в качестве сервиса в приложение
             services.AddDbContext<DP_MainContext>(option => option.UseSqlServer (connectionString) );
-
+            DependencyInjection(services);
             services.AddAuthentication(x => 
             {
             });

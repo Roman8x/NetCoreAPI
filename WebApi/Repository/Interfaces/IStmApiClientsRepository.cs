@@ -9,6 +9,6 @@ namespace WebApi.Repository
     public interface IStmApiClientsRepository
     {
          StmApiClients GetItemByAPIKey(string APIKey);
-        Task<IList<RefPartners>> GetItems(int pageIndex, int rowsPerPage);
+        Task<IList<StmApiClients>> GetItems(int pageIndex, int rowsPerPage);
     }
 }

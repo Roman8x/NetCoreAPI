@@ -11,7 +11,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    internal class DtTechController : ControllerBase
+    public class DtTechController : ControllerBase
     {     
         private readonly IDtTechRepository _dtTechRepository;
 

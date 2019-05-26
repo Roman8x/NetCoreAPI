@@ -6,7 +6,7 @@ using WebApi.Models;
 
 namespace WebApi.Repository
 {
-    interface IRefPartnersRepository
+    public interface IRefPartnersRepository
     {
         Task<IList<RefPartners>> GetItems(int pageIndex, int rowsPerPage);
     }

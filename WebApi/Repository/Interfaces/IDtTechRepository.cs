@@ -6,7 +6,7 @@ using WebApi.Models;
 
 namespace WebApi.Repository
 {
-    interface IDtTechRepository
+    public interface IDtTechRepository
     {
         Task<IList<DtTech>> GetItems(int pageIndex, int rowsPerPage);
     }

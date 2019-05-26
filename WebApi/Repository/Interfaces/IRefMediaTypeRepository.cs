@@ -6,7 +6,7 @@ using WebApi.Models;
 
 namespace WebApi.Repository
 {
-    interface IRefMediaTypeRepository
+    public interface IRefMediaTypeRepository
     {
         IList<RefMediaType> GetItems();
     }

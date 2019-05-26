@@ -21,13 +21,13 @@ namespace WebApi.Repository
             return result.FirstOrDefault () ;
         }
 
-        public async Task<IList<RefPartners>> GetItems(int pageIndex, int rowsPerPage)
+        public async Task<IList<StmApiClients>> GetItems(int pageIndex, int rowsPerPage)
         {
-            var result = from entity in _context.RefPartners
+            var result = from entity in _context.StmApiClients
                          select entity;
 
-            PaginatedList<RefPartners> t = await PaginatedList<RefPartners>.CreateAsync(result, pageIndex, rowsPerPage);
-            return t.ToList<RefPartners>();
+            PaginatedList<StmApiClients> t = await PaginatedList<StmApiClients>.CreateAsync(result, pageIndex, rowsPerPage);
+            return t.ToList<StmApiClients>();
         }
     }
 }

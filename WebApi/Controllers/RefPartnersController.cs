@@ -10,7 +10,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    internal class RefPartnersController : ControllerBase
+    public class RefPartnersController : ControllerBase
     {        
         private readonly IRefPartnersRepository _refPartnersRepository;
 

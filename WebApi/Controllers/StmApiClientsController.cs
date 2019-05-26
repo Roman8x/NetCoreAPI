@@ -10,7 +10,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    internal class StmApiClientsController : ControllerBase
+    public class StmApiClientsController : ControllerBase
     {
         private readonly IStmApiClientsRepository _stmApiClientsRepository;
 

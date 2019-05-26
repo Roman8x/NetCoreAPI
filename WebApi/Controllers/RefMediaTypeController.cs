@@ -10,7 +10,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    internal class RefMediaTypeController : ControllerBase
+    public class RefMediaTypeController : ControllerBase
     {        
         private readonly IRefMediaTypeRepository _refMediaTypeRepository;
 

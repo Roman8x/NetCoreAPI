@@ -14,7 +14,7 @@ namespace WebApi.Controllers
    
     [Route("api/[controller]")]
     [ApiController]
-    internal  class DtBasesController : ControllerBase
+    public   class DtBasesController : ControllerBase
     {
         private readonly IDtBaseRepository _dtBaseRepository;
 
@@ -25,7 +25,7 @@ namespace WebApi.Controllers
 
        
 
-        // GET: DtBases/Details/1/5
+        // GET: DtBases/1/5
         [HttpGet("{pageNumber}/{rowsPerPage}" )]
         [Route ("Details") ]
         public async Task < IActionResult >  GetPage( int pageNumber, int rowsPerPage)
